@@ -8,6 +8,7 @@ Route::get('/', function () {
     return view('login');
 });
 
+
 Route::post('/register-api', [AuthController::class, 'register']);
 Route::post('/login-api', [AuthController::class, 'login']);
 
