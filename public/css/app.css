@@ -1,0 +1,264 @@
+:root{
+    --colorUno: #e89ac7;
+    --colorHover: #f0e14a;
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Estilo del contenedor principal */
+.container {
+    width: 80%;
+    margin: 20px auto;
+}
+
+/* Estilo de la barra de navegación */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+    
+}
+
+/* Alinear los enlaces del menú de navegación a la izquierda */
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #f0e14a;
+}
+
+/* Estilo del pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    
+}
+
+/* Estilo para el contenido principal */
+.container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo de los mensajes de éxito y advertencia */
+.success {
+    color: green;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.warning {
+    color: orange;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Botones */
+button {
+    background-color: var(--colorHover);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: var(--colorHover);
+}
+
+
+/* Contenedor principal para los personajes */
+.character-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+  
+}
+
+/* Estilo para cada item de personaje */
+.character-grid li {
+    list-style-type: none;
+    background-color: #efeeee;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+
+.character-grid li:hover {
+    transform: translateY(-5px);
+}
+
+/* Imagen del personaje */
+.character-grid img {
+    margin: 0 auto;
+    width: 60% !important;
+    height: auto !important;
+    border-radius: 8px !important;
+    margin-top: 10px !important;
+    display: block;
+    
+}
+
+
+
+/* Botón de filtro */
+form button {
+    background-color: var(--colorUno);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+    
+}
+
+form button:hover {
+    background-color: var(--colorHover);
+}
+
+/* Navegación de la paginación */
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.pagination a {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+.pagination a:hover {
+    background-color: #555;
+}
+li{
+    text-align: center;
+    list-style: none;
+}
+
+.tarjetasPersonajes{
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    color: #88e23b;
+    font-size: 2.5rem;
+}
+
+/* Estilo general de los inputs y selects */
+form input[type="text"],
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    
+}
+
+.character-details{
+    text-align: center;
+}
+
+.character-image img{
+    border-radius: 5px;
+}
+
+
+/* Estructura básica */
+.registro {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+    max-width: 100%; 
+    margin: 0 auto; 
+}
+
+.input-fijo {
+    width: 100%; 
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+
+/* Diseño responsivo */
+@media (min-width: 768px) {
+    .registro {
+        flex-direction: row; 
+        flex-wrap: wrap; 
+        justify-content: space-between; 
+    }
+    
+    .registro label {
+        width: 48%; 
+    }
+
+    button {
+        width: 100%; 
+    }
+    
+}
+
+/* Estilo para mensajes de error */
+form .error {
+    color: red;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+
+.error-messages ul {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+}
+
+.error-messages li {
+    color: red; 
+    font-weight: bold; 
+    margin-bottom: 5px; 
+}
+
+nav a.active-link {
+    color: #e89ac7; 
+    font-weight: bold;
+}
+
+
