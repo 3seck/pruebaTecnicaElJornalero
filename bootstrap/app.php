@@ -12,9 +12,7 @@ return Application::configure(basePath: dirname(__DIR__))
     )
     ->withMiddleware(function (Middleware $middleware) {
         $middleware->validateCsrfTokens(except: [
-            'login-api',
             
-            "favorites/*"
         ]);
     })
     ->withExceptions(function (Exceptions $exceptions) {

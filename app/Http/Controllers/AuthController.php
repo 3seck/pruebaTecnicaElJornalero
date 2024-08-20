@@ -65,7 +65,7 @@ class AuthController extends Controller
             ])->withInput();
         }
 
-        // Regenerar la sesión para protegerse contra ataques de fijación de sesión
+        // Regenerar la sesió
         $request->session()->regenerate();
 
         return redirect()->intended('/characters')->with('success', 'Inicio de sesión exitoso.');
